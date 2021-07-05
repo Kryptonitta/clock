@@ -1,0 +1,64 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ededed;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reloj {
+	background-image: url("giro.png");
+	width: 400px;
+	height: 400px;
+	background-size: 100%;
+	display: flex;
+	margin: auto;
+}
+
+.reloj img {
+	position: absolute;
+	height: 400px; /* LA MISMA QUE EL BACKGROUND*/
+	transition: all 0.5s;
+}
+
+#horas,
+#minutos,
+#segundos {
+	position: absolute;
+}
+
+.flex {
+	display: flex;
+}
+
+.contenido {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px #ccc;
+	padding: 35px;
+	margin: 22px;
+	flex: 4 4;
+}
+
+.contenido:first-child {
+	flex: 5 5;
+}
+
+.contenido p {
+	font-size: 50px;
+	color: #333;
+	text-align: center;
+}
+.contenido h4 {
+	font-size: 60px;
+	color: #333;
+	text-align: center;
+}
